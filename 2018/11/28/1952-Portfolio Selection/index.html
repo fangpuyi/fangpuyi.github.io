@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT">
+  <meta name="keywords" content="投资组合,">
 
 
 
@@ -79,14 +79,20 @@
 
 
 
-<meta name="keywords" content="Mathematics, Economics, Computer Science">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Economics, Mathematics and Computer Science">
-<meta property="og:url" content="http://fangpuyi.github.io/index.html">
+<meta name="description" content="@TOC 背景Markowitz, H. (1952). Portfolio selection. The journal of finance, 7(1), 77-91. 作者Harry Max Markowitz，1927年生于美国伊利诺伊州，于1950年、1952年在芝加哥大学获得经济学硕士、博士学位。属于芝加哥学派，现代投资组合理论的开创者，1990年诺贝尔经济学奖得主。">
+<meta name="keywords" content="投资组合">
+<meta property="og:type" content="article">
+<meta property="og:title" content="1952-Portfolio Selection">
+<meta property="og:url" content="http://fangpuyi.github.io/2018/11/28/1952-Portfolio Selection/index.html">
 <meta property="og:site_name" content="Economics, Mathematics and Computer Science">
+<meta property="og:description" content="@TOC 背景Markowitz, H. (1952). Portfolio selection. The journal of finance, 7(1), 77-91. 作者Harry Max Markowitz，1927年生于美国伊利诺伊州，于1950年、1952年在芝加哥大学获得经济学硕士、博士学位。属于芝加哥学派，现代投资组合理论的开创者，1990年诺贝尔经济学奖得主。">
 <meta property="og:locale" content="zh-CN">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/20181128160722427.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L01hZ2VfRUU=,size_16,color_FFFFFF,t_70">
+<meta property="og:updated_time" content="2018-11-28T08:28:45.473Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Economics, Mathematics and Computer Science">
+<meta name="twitter:title" content="1952-Portfolio Selection">
+<meta name="twitter:description" content="@TOC 背景Markowitz, H. (1952). Portfolio selection. The journal of finance, 7(1), 77-91. 作者Harry Max Markowitz，1927年生于美国伊利诺伊州，于1950年、1952年在芝加哥大学获得经济学硕士、博士学位。属于芝加哥学派，现代投资组合理论的开创者，1990年诺贝尔经济学奖得主。">
+<meta name="twitter:image" content="https://img-blog.csdnimg.cn/20181128160722427.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L01hZ2VfRUU=,size_16,color_FFFFFF,t_70">
 
 
 
@@ -116,13 +122,13 @@
 
 
 
-  <link rel="canonical" href="http://fangpuyi.github.io/">
+  <link rel="canonical" href="http://fangpuyi.github.io/2018/11/28/1952-Portfolio Selection/">
 
 
 
 
 
-  <title>Economics, Mathematics and Computer Science</title>
+  <title>1952-Portfolio Selection | Economics, Mathematics and Computer Science</title>
   
 
 
@@ -141,8 +147,7 @@
     
   
 
-  <div class="container sidebar-position-left 
-  page-home">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope="" itemtype="http://schema.org/WPHeader">
@@ -215,9 +220,9 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
 
   
 
@@ -247,9 +252,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/11/28/1952-Portfolio Selection/" itemprop="url">1952-Portfolio Selection</a></h1>
+          <h1 class="post-title" itemprop="name headline">1952-Portfolio Selection</h1>
         
 
         <div class="post-meta">
@@ -321,18 +324,20 @@
       
 
       
-        
-          <p>@<a href="目录">TOC</a></p>
+        <p>@<a href="目录">TOC</a></p>
 <h1 id="背景"><a href="#背景" class="headerlink" title="背景"></a>背景</h1><p>Markowitz, H. (1952). Portfolio selection. The journal of finance, 7(1), 77-91.</p>
 <p>作者Harry Max Markowitz，1927年生于美国伊利诺伊州，于1950年、1952年在芝加哥大学获得经济学硕士、博士学位。属于芝加哥学派，现代投资组合理论的开创者，1990年诺贝尔经济学奖得主。</p>
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2018/11/28/1952-Portfolio Selection/#more" rel="contents">
-              Read more &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
+<a id="more"></a>
+<h1 id="文章主线"><a href="#文章主线" class="headerlink" title="文章主线"></a>文章主线</h1><p>其实放到今天来看，这篇文章在技术上已没有任何难度。随机变量的期望和方差的计算，以及对方程所表示的几何图形的分析，不会超过本科难度。但本文仍值得好好研读，原因之一便是它的逻辑线索非常清晰。</p>
+<p>人们选择投资组合的过程，可以分为两步：第一步先从观察和经验中形式对股票未来表现的信念，第二步是从这些信念出发，来选择投资组合。本文只考虑第二步。</p>
+<p>那么，假设投资者已经对股票未来表现有了预判，该如何选择投资组合呢？一种方法是最大化折现后的期望收益，另一种方法是人们想要期望收益，而不想要组合的方差，这就是E-V规则，即均值-方差规则。</p>
+<p>第一种方法，不管是作为解释还是作为真正的投资指导，经论证都是可以排除的，因为它不符合现实中的“分散化投资”的事实。而E-V规则，可以很好地解释人们分散化投资的行为。</p>
+<p>那么怎样利用E-V规则来指导投资？假设在证券$i$中配置的资金比例为$X<em>i$，期望收益为$\mu_i$，证券$i$和$j$的协方差为$\sigma</em>{ij}$，那么整个投资组合的期望和方差可以表示为：</p>
+<script type="math/tex; mode=display">
+E=\sum \limits_{i=1}^n {X_i \mu_i}\\
+V=\sum \limits_{i=1}^n \sum \limits_{j=1}^n {\sigma_{ij} X_i X_j}</script><p>按照“相同期望收益，选最小方差”，和“相同方差，选最大期望收益”的原则，就可以在所有可能形成的投资组合的期望-方差范围中，画出有效的组合，如下图所示。<br><img src="https://img-blog.csdnimg.cn/20181128160722427.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L01hZ2VfRUU=,size_16,color_FFFFFF,t_70" alt="efficient combinations"></p>
+<p>E-V规则，正是人们苦苦寻找的投资原则。</p>
+
       
     </div>
     
@@ -342,19 +347,54 @@
     
 
     
+      <div>
+        <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
+  <div>谢谢鼓励！</div>
+  <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
+    <span>Donate</span>
+  </button>
+  <div id="QR" style="display: none;">
+
+    
+      <div id="wechat" style="display: inline-block">
+        <img id="wechat_qr" src="/images/wechatpay.jpg" alt="Boye WeChat Pay">
+        <p>WeChat Pay</p>
+      </div>
+    
+
+    
+      <div id="alipay" style="display: inline-block">
+        <img id="alipay_qr" src="/images/alipay.jpg" alt="Boye Alipay">
+        <p>Alipay</p>
+      </div>
+    
+
+    
+
+  </div>
+</div>
+
+      </div>
+    
 
     
 
     <footer class="post-footer">
       
+        <div class="post-tags">
+          
+            <a href="/tags/投资组合/" rel="tag"># 投资组合</a>
+          
+        </div>
+      
+
+      
+      
+      
 
       
 
       
-
-      
-      
-        <div class="post-eof"></div>
       
     </footer>
   </div>
@@ -364,10 +404,11 @@
   </article>
 
 
-    
-  </section>
 
-  
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -375,6 +416,10 @@
 
 
           
+
+  
+
+
 
         </div>
         
@@ -395,8 +440,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            Overview
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
             
@@ -456,6 +510,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#背景"><span class="nav-number">1.</span> <span class="nav-text">背景</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#文章主线"><span class="nav-number">2.</span> <span class="nav-text">文章主线</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -589,6 +659,10 @@
   
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
 
   
 
